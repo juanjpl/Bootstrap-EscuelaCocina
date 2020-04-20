@@ -1,0 +1,216 @@
+:root {
+    --primario: #f46669;
+    --secundario: #c7c57d;
+    --gris: #f5f5f5;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #303030;
+}
+
+div.row {
+    margin-right: 0px;
+}
+
+div.container {
+    padding-right: 0px;
+}
+
+div.container-fluid {
+    padding-right: 0px;
+}
+
+
+/***********************************************************
+
+                    Header
+
+***********************************************************/
+
+p {
+    font-weight: 100;
+    line-height: 3rem;
+    font-size: 1rem;
+}
+
+.nav-link,
+.nav-link:hover {
+    text-transform: uppercase;
+    color: black;
+    font-weight: 700;
+}
+
+.bg-primary {
+    background-color: #f46669!important;
+}
+
+.bg-secondary {
+    background-color: #c7c57d!important;
+}
+
+.bg-vino {
+    background-image: url(../img/principal1.jpg);
+}
+
+.bg-comida {
+    background-image: url(../img/principal2.jpg);
+}
+
+
+/* con este media query es grande en tamaño lg */
+
+@media (min-width: 768px) {
+    .imagen-superior>div,
+    .imagen-inferior>div {
+        height: 45rem;
+    }
+}
+
+.imagen-superior>div,
+.imagen-inferior>div {
+    height: 30rem;
+}
+
+.imagen-inferior .bg-comida {
+    order: 1;
+}
+
+@media (min-width: 768px) {
+    .imagen-inferior .bg-comida {
+        order: unset;
+    }
+}
+
+.imagen-superior .contenido {
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+.imagen-inferior .contenido {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.contenido p {
+    font-size: 1.2rem;
+    font-weight: 100;
+    line-height: 2rem;
+}
+
+
+/***********************************************************
+
+                   Estudiar con nosotros
+
+***********************************************************/
+
+.separador::after {
+    content: "";
+    display: block;
+    width: 300px;
+    height: 100px;
+    background-image: url(../img/separador.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 20px auto 0 auto;
+}
+
+.nosotros .informacion h3 {
+    font-weight: 300;
+    font-size: 1.8rem;
+}
+
+
+/***********************************************************
+
+                   proximas clases 
+
+***********************************************************/
+
+.clases {
+    background-color: #f5f5f5;
+}
+
+.card-meta span {
+    font-weight: 700;
+}
+
+.card-subtitle {
+    color: #f46669;
+    font-weight: 700;
+    line-height: 2rem;
+}
+
+.card-body p {
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
+.card-body a {
+    color: #f46669;
+    text-decoration: none;
+}
+
+.card-body a:hover {
+    color: #ff2d31;
+    text-decoration: none;
+}
+
+.badge-secondary {
+    background-color: #c7c57d;
+}
+
+
+/***********************************************************
+
+                  Licenciatura
+
+***********************************************************/
+
+.licenciatura {
+    background-image: url(../img/chef_bg.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.estudia-licenciatura {
+    height: 38rem;
+}
+
+.estudia-licenciatura .contenido h2 {
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.estudia-licenciatura .contenido p {
+    font-size: 1.5rem;
+    line-height: 3rem;
+    font-weight: 100;
+}
+
+.btn-primary {
+    background-color: #f46669;
+    border-color: #f46669;
+}
+
+.btn-primary:hover {
+    background-color: #fa2e32;
+    border-color: #fa2e32;
+}
+
+
+/***********************************************************
+
+                  Footer
+
+***********************************************************/
+
+.footer {
+    border-bottom: 10px solid #f46669;
+}
+
+.copyright {
+    font-weight: 700;
+    font-size: 1rem;
+}
